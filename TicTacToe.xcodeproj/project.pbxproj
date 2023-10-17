@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		580D684C2AD7D43100B052EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D684B2AD7D43100B052EE /* AppDelegate.swift */; };
 		580D684E2AD7D43100B052EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D684D2AD7D43100B052EE /* SceneDelegate.swift */; };
-		580D68502AD7D43100B052EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D684F2AD7D43100B052EE /* ViewController.swift */; };
+		580D68502AD7D43100B052EE /* PlayGroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D684F2AD7D43100B052EE /* PlayGroundViewController.swift */; };
 		580D68532AD7D43100B052EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580D68512AD7D43100B052EE /* Main.storyboard */; };
 		580D68552AD7D43200B052EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580D68542AD7D43200B052EE /* Assets.xcassets */; };
 		580D68582AD7D43200B052EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580D68562AD7D43200B052EE /* LaunchScreen.storyboard */; };
+		C64051DB2AD904B5009A6C8A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64051DA2AD904B5009A6C8A /* WelcomeViewController.swift */; };
+		C64051DD2AD90FFF009A6C8A /* OnlyForXCodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64051DC2AD90FFF009A6C8A /* OnlyForXCodeExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		580D68482AD7D43100B052EE /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		580D684B2AD7D43100B052EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		580D684D2AD7D43100B052EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		580D684F2AD7D43100B052EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		580D684F2AD7D43100B052EE /* PlayGroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGroundViewController.swift; sourceTree = "<group>"; };
 		580D68522AD7D43100B052EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		580D68542AD7D43200B052EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		580D68572AD7D43200B052EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		580D68592AD7D43200B052EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64051DA2AD904B5009A6C8A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C64051DC2AD90FFF009A6C8A /* OnlyForXCodeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyForXCodeExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				580D684B2AD7D43100B052EE /* AppDelegate.swift */,
 				580D684D2AD7D43100B052EE /* SceneDelegate.swift */,
-				580D684F2AD7D43100B052EE /* ViewController.swift */,
-				580D68512AD7D43100B052EE /* Main.storyboard */,
-				580D68542AD7D43200B052EE /* Assets.xcassets */,
-				580D68562AD7D43200B052EE /* LaunchScreen.storyboard */,
+				C64051D92AD8FE6F009A6C8A /* Resources */,
+				C64051D82AD8FE52009A6C8A /* Model */,
+				C64051D72AD8FE48009A6C8A /* View */,
+				C64051D62AD8FE3D009A6C8A /* Controller */,
 				580D68592AD7D43200B052EE /* Info.plist */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		C64051D62AD8FE3D009A6C8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				580D684F2AD7D43100B052EE /* PlayGroundViewController.swift */,
+				C64051DA2AD904B5009A6C8A /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C64051D72AD8FE48009A6C8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				580D68562AD7D43200B052EE /* LaunchScreen.storyboard */,
+				580D68512AD7D43100B052EE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C64051D82AD8FE52009A6C8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C64051DC2AD90FFF009A6C8A /* OnlyForXCodeExtension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C64051D92AD8FE6F009A6C8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				580D68542AD7D43200B052EE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580D68502AD7D43100B052EE /* ViewController.swift in Sources */,
+				580D68502AD7D43100B052EE /* PlayGroundViewController.swift in Sources */,
+				C64051DD2AD90FFF009A6C8A /* OnlyForXCodeExtension.swift in Sources */,
+				C64051DB2AD904B5009A6C8A /* WelcomeViewController.swift in Sources */,
 				580D684C2AD7D43100B052EE /* AppDelegate.swift in Sources */,
 				580D684E2AD7D43100B052EE /* SceneDelegate.swift in Sources */,
 			);
@@ -301,6 +341,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Suvendu-Kumar.TicTacToe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +371,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Suvendu-Kumar.TicTacToe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

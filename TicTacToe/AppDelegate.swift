@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TicTacToe
 //
-//  Created by Suvendu Kumar on 12/10/23.
+//  Created by Harapriya on 12/10/23.
 //
 
 import UIKit
